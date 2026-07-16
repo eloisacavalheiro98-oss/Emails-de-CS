@@ -1,0 +1,353 @@
+<title>Nova versão disponível</title>
+<meta name="description" content="Modelo de comunicado de Customer Success sobre o lançamento de uma nova versão do app.">
+<style>
+  :root {
+    --ink: #1b2430;
+    --ink-soft: #4d5661;
+    --paper: #f3f4f2;
+    --card: #ffffff;
+    --line: #dfe2e7;
+    --accent: #3457d5;
+    --accent-ink: #24408f;
+    --accent-soft: #e8ecfb;
+    --highlight: #2e7d6b;
+    --highlight-soft: #e3f0ec;
+    --focus: #3457d5;
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #eceef2;
+    --ink-soft: #aab1bd;
+    --paper: #14171c;
+    --card: #1c2027;
+    --line: #2c313a;
+    --accent: #7e97f4;
+    --accent-ink: #c2cffb;
+    --accent-soft: #232c47;
+    --highlight: #6fbfa9;
+    --highlight-soft: #1c322c;
+    --focus: #7e97f4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eceef2;
+      --ink-soft: #aab1bd;
+      --paper: #14171c;
+      --card: #1c2027;
+      --line: #2c313a;
+      --accent: #7e97f4;
+      --accent-ink: #c2cffb;
+      --accent-soft: #232c47;
+      --highlight: #6fbfa9;
+      --highlight-soft: #1c322c;
+      --focus: #7e97f4;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 48px 20px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .brand-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .version-tag {
+    font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 12.5px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+  .eyebrow {
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--highlight);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+
+  .lede {
+    font-size: 16.5px;
+    color: var(--ink-soft);
+    margin: 0 0 36px;
+    max-width: 54ch;
+  }
+
+  .lede strong {
+    color: var(--ink);
+  }
+
+  h2.section-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin: 0 0 16px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 36px;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+    padding: 18px 4px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feature:last-child {
+    border-bottom: none;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--highlight-soft);
+    color: var(--highlight);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  .feature-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .feature h3 {
+    font-size: 15.5px;
+    font-weight: 600;
+    margin: 2px 0 4px;
+  }
+
+  .feature p {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 46ch;
+  }
+
+  .cta-block {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .cta-block p {
+    margin: 0 0 18px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: opacity 0.15s ease;
+  }
+
+  .cta-button:hover {
+    opacity: 0.88;
+  }
+
+  .cta-button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  .cta-note {
+    margin-top: 14px !important;
+    font-size: 12.5px !important;
+    color: var(--ink-soft);
+  }
+
+  .signoff {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+  }
+
+  .signoff .name {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  footer {
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    justify-content: space-between;
+  }
+
+  footer a {
+    color: var(--ink-soft);
+  }
+
+  .placeholder {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border-radius: 4px;
+    padding: 0 4px;
+  }
+
+  @media (max-width: 460px) {
+    h1 { font-size: 26px; }
+    .masthead { flex-wrap: wrap; }
+    .feature { grid-template-columns: 34px 1fr; gap: 12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta-button { transition: none; }
+  }
+</style>
+
+<div class="sheet">
+  <div class="masthead">
+    <div class="brand">
+      <span class="brand-mark">Rz</span>
+      <span class="placeholder">Nome do App</span>
+    </div>
+    <span class="version-tag">v2.4.0 · 16 jul 2026</span>
+  </div>
+
+  <p class="eyebrow">Nova versão disponível</p>
+  <h1>O <span class="placeholder">Nome do App</span> ficou mais rápido — e mais fácil de usar</h1>
+  <p class="lede">
+    Olá! A partir de hoje, a versão <strong>2.4.0</strong> já está disponível para a sua conta.
+    Reunimos abaixo as principais mudanças, pensadas a partir dos pedidos que vocês nos enviaram.
+  </p>
+
+  <h2 class="section-title">O que mudou</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+      </div>
+      <div>
+        <h3>Carregamento até <span class="placeholder">40%</span> mais rápido</h3>
+        <p>Otimizamos o carregamento das telas mais usadas do dia a dia, incluindo <span class="placeholder">[nome da tela/módulo]</span>.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      </div>
+      <div>
+        <h3><span class="placeholder">Nome da funcionalidade nova</span></h3>
+        <p>Descreva aqui, em uma ou duas frases, o problema que essa novidade resolve para o cliente.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <div>
+        <h3>Correções de estabilidade</h3>
+        <p>Resolvemos <span class="placeholder">[X]</span> relatos de instabilidade, incluindo o erro ao <span class="placeholder">[ação específica]</span>.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/></svg>
+      </div>
+      <div>
+        <h3><span class="placeholder">Ajuste visual ou de fluxo</span></h3>
+        <p>Explique brevemente o que mudou na interface e por que isso facilita o uso.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <p>A atualização é automática — mas se preferir, você pode aplicá-la agora.</p>
+    <a class="cta-button" href="#">Atualizar agora</a>
+    <p class="cta-note">Leva menos de 2 minutos e não interrompe o que você já tem salvo.</p>
+  </div>
+
+  <p class="signoff">
+    Qualquer dúvida sobre a atualização, é só responder este e-mail.<br>
+    <span class="name">Equipe de Sucesso do Cliente</span> · Razonet
+  </p>
+
+  <footer>
+    <span>Razonet · Sucesso do Cliente</span>
+    <span><a href="#">Ver notas completas da versão</a></span>
+  </footer>
+</div>
