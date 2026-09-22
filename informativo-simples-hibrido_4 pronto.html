@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simples Puro x Simples Híbrido — o que muda para a sua empresa</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --razonet-blue:#0171EB; --razonet-off-white:#EFF3F8; --razonet-dark-blue:#003159;
+    --razonet-darker-blue:#1C232D; --razonet-white:#FFFFFF; --razonet-light-blue:#CCE3FB;
+    --razonet-mid-light:#4B9AF1; --razonet-mid-dark:#0151A2; --razonet-rose:#F8E5E3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--razonet-off-white);color:var(--razonet-darker-blue);
+    font-family:'Inter','Inter Variable','Segoe UI',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;padding:32px 16px}
+  .mail{max-width:600px;margin:0 auto;background:var(--razonet-white);border-radius:14px;overflow:hidden}
+
+  .head{background:var(--razonet-dark-blue);padding:22px 36px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:baseline;gap:10px;color:var(--razonet-white);text-decoration:none}
+  .brand img{height:26px;display:block}
+  .brand .word{font-weight:800;font-size:22px;letter-spacing:-.02em}
+  .brand .desc{font-size:12px;color:var(--razonet-light-blue);font-weight:500}
+  .head .date{font-size:12px;color:var(--razonet-light-blue)}
+
+  .hero{background:var(--razonet-blue);color:var(--razonet-white);padding:44px 36px 40px}
+  .hero .kicker{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+    border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;margin-bottom:18px}
+  .hero h1{font-size:34px;line-height:1.12;font-weight:800;letter-spacing:-.025em;max-width:20ch}
+  .hero p{margin-top:14px;font-size:16px;line-height:1.5;color:var(--razonet-light-blue);max-width:46ch}
+  .hero .free{margin-top:20px;display:inline-flex;align-items:center;gap:8px;background:var(--razonet-white);
+    color:var(--razonet-dark-blue);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:700}
+
+  .body{padding:36px}
+  .body p{font-size:15px;line-height:1.6}
+  .body h2{color:var(--razonet-blue);font-size:21px;font-weight:600;margin:32px 0 16px;letter-spacing:-.01em}
+
+  .items{display:grid;gap:12px}
+  .item{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--razonet-off-white);border-radius:10px;padding:16px}
+  .item .ic{width:44px;height:44px;border-radius:10px;background:var(--razonet-light-blue);display:grid;place-items:center;
+    color:var(--razonet-mid-dark);font-weight:800;font-size:18px}
+  .item h3{font-size:15px;font-weight:600;color:var(--razonet-dark-blue);margin-bottom:3px}
+  .item p{font-size:14px;line-height:1.5}
+
+  .cta{margin:32px 0 8px;text-align:center}
+  .btn{display:inline-block;background:var(--razonet-blue);color:var(--razonet-white)!important;text-decoration:none;
+    font-weight:700;font-size:16px;padding:16px 30px;border-radius:10px}
+  .btn.sec{background:var(--razonet-mid-dark)}
+  .cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .cta .note{margin-top:12px;font-size:13px;color:var(--razonet-mid-dark)}
+  .cta .note a{color:var(--razonet-mid-dark);font-weight:600}
+
+  .callout{margin-top:28px;background:var(--razonet-light-blue);border-left:4px solid var(--razonet-blue);
+    border-radius:0 10px 10px 0;padding:16px 18px;color:var(--razonet-dark-blue);font-size:14px;line-height:1.55}
+  .warn{margin-top:16px;background:var(--razonet-rose);border-left:4px solid #C4443A;border-radius:0 10px 10px 0;
+    padding:16px 18px;font-size:14px;line-height:1.55;color:var(--razonet-darker-blue)}
+
+  .sign{margin-top:32px;font-size:15px;line-height:1.6}
+  .sign strong{color:var(--razonet-dark-blue)}
+
+  .foot{background:var(--razonet-darker-blue);color:var(--razonet-off-white);padding:26px 36px;font-size:12px;line-height:1.6}
+  .foot .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .foot .brandf{font-weight:800;font-size:16px;color:var(--razonet-white);margin-bottom:4px}
+  .foot a{color:var(--razonet-mid-light);text-decoration:none}
+  .foot .addr{opacity:.75;margin-top:14px;padding-top:14px;border-top:1px solid rgba(239,243,248,.15)}
+
+  @media (max-width:520px){.head,.hero,.body,.foot{padding-left:22px;padding-right:22px}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<div class="mail">
+
+  <div class="head">
+    <a class="brand" href="https://razonet.com.br">
+      <img src="https://razonet.com.br/icons/logo-footer.svg" alt="Razonet - Contabilidade Digital" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';this.nextElementSibling.nextElementSibling.style.display='inline'">
+      <span class="word" style="display:none">Razonet</span>
+      <span class="desc" style="display:none">Contabilidade Digital</span>
+    </a>
+    <span class="date">Setembro de 2026</span>
+  </div>
+
+  <div class="hero">
+    <span class="kicker">Informativo · Simples Nacional</span>
+    <h1>Simples Puro x Simples Híbrido</h1>
+    <p>A Reforma Tributária traz uma nova escolha para as empresas do Simples Nacional. Entenda a diferença entre os dois caminhos e o que recomendamos antes de qualquer decisão.</p>
+    <span class="free">✓&nbsp; A opção pode ser feita duas vezes por ano</span>
+  </div>
+
+  <div class="body">
+    <p>Olá, tudo bem?</p>
+    <p style="margin-top:12px">Com a Reforma Tributária, as empresas do Simples Nacional passam a ter uma nova escolha: continuar recolhendo tudo na guia única ou recolher os novos tributos — <strong>IBS</strong> e <strong>CBS</strong> — por fora dela. É a principal mudança que afeta o seu negócio neste momento, e queremos que você entenda bem as duas opções.</p>
+
+    <h2>As duas opções, em resumo</h2>
+    <div class="items">
+      <div class="item"><div class="ic">1</div><div><h3>Simples Puro</h3><p>Tudo continua como está. IBS e CBS seguem calculados dentro do DAS: uma guia só, mesma rotina, mesmos limites e anexos. É o que acontece com quem não fizer nenhuma opção.</p></div></div>
+      <div class="item"><div class="ic">2</div><div><h3>Simples Híbrido</h3><p>A empresa permanece no Simples, mas passa a apurar e pagar IBS e CBS separadamente, com débitos e créditos mês a mês, gerando crédito para clientes do Lucro Real e do Lucro Presumido.</p></div></div>
+    </div>
+
+    <h2>Essa mudança é vantajosa?</h2>
+    <p>Na maioria dos casos, não. O regime híbrido costuma representar <strong>aumento da carga tributária</strong> e <strong>mais controles fiscais</strong>, e só se justifica em perfis bem específicos de empresa.</p>
+
+    <div class="warn"><strong>A recomendação da Razonet:</strong> nenhuma migração deve ser feita neste momento sem antes um estudo e uma simulação com os números da sua empresa. Se você não fizer nada, permanece no Simples Puro.</div>
+
+    <div class="callout"><strong>E há uma boa notícia:</strong> a opção pode ser feita duas vezes por ano, em <strong>setembro</strong> e em <strong>março</strong>. Ou seja, dá para tomar essa decisão com calma e com o estudo pronto, sem correria.</div>
+
+    <h2>Quer se aprofundar?</h2>
+    <p>No dia 02 de setembro realizamos um curso com os nossos especialistas explicando todas essas mudanças em detalhe. A gravação está disponível para você assistir quando quiser.</p>
+
+    <div class="cta">
+      <div class="btns">
+        <a class="btn" href="https://tldv.io/app/meetings/6a9863f647364b00130db878/">Assistir ao curso</a>
+        <a class="btn sec" href="https://simulador-regime-hibrido-cbs.razo0824.chatgpt.site">Simule aqui</a>
+      </div>
+      <div class="note">Compare o cenário da sua empresa nos dois regimes antes de decidir.</div>
+    </div>
+
+    <p class="sign">E, claro, conte com a Razonet para avaliar o caso da sua empresa. É só chamar no WhatsApp <strong>(49) 99993-6719</strong>.<br><br>Um abraço,<br><strong>Equipe Razonet</strong></p>
+  </div>
+
+  <div class="foot">
+    <div class="row">
+      <div><div class="brandf">Razonet</div>A primeira contabilidade digital do Brasil</div>
+      <div style="text-align:right"><a href="https://razonet.com.br">razonet.com.br</a><br><a href="https://cliente.razonet.com.br">Área do cliente</a><br><a href="https://instagram.com/razonetdigital">@razonetdigital</a></div>
+    </div>
+    <div class="addr">Rua Francisco Lindner, 534, Centro, Joaçaba/SC, CEP 89600-000<br>Rodovia SC 401, 4150, Ed. Primavera Office, 3º andar, Sala 01, Saco Grande, Florianópolis/SC, CEP 88.032-000</div>
+  </div>
+
+</div>
+</body>
+</html>
