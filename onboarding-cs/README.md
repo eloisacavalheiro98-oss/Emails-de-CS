@@ -1,6 +1,6 @@
 # Sequência de e-mails — Onboarding CS
 
-16 e-mails de onboarding e boas-vindas, no estilo visual da newsletter (Inter, paleta Razonet). Placeholder `[Nome]` para personalização.
+16 e-mails de onboarding e boas-vindas, em HTML com tabelas e estilo 100% inline (sem `<style>` no head), no padrão que renderiza corretamente no RD Station — mesmo formato usado em `vale-transporte-regras-e-cuidados.html`. Paleta oficial Razonet. Sem placeholder de nome (saudação genérica).
 
 ## 1. Ativação da conta (D+0 a D+17)
 

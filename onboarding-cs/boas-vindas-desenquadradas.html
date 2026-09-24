@@ -3,107 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Bem-vindo ao Simples Nacional — Razonet</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --razonet-blue:#0171EB; --razonet-off-white:#EFF3F8; --razonet-dark-blue:#003159;
-    --razonet-darker-blue:#1C232D; --razonet-white:#FFFFFF; --razonet-light-blue:#CCE3FB;
-    --razonet-mid-light:#4B9AF1; --razonet-mid-dark:#0151A2; --razonet-rose:#F8E5E3;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--razonet-off-white);color:var(--razonet-darker-blue);
-    font-family:'Inter','Inter Variable','Segoe UI',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;padding:32px 16px}
-  .mail{max-width:600px;margin:0 auto;background:var(--razonet-white);border-radius:14px;overflow:hidden}
-
-  .head{background:var(--razonet-dark-blue);padding:22px 36px;display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;align-items:baseline;gap:10px;color:var(--razonet-white);text-decoration:none}
-  .brand img{height:26px;display:block}
-  .brand .word{font-weight:800;font-size:22px;letter-spacing:-.02em}
-  .brand .desc{font-size:12px;color:var(--razonet-light-blue);font-weight:500}
-  .head .tag{font-size:12px;color:var(--razonet-light-blue)}
-
-  .hero{background:var(--razonet-blue);color:var(--razonet-white);padding:44px 36px 40px}
-  .hero .kicker{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
-    border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;margin-bottom:18px}
-  .hero h1{font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.025em;max-width:22ch}
-  .hero p{margin-top:14px;font-size:16px;line-height:1.5;color:var(--razonet-light-blue);max-width:46ch}
-
-  .body{padding:36px}
-  .body p{font-size:15px;line-height:1.6}
-  .body h2{color:var(--razonet-blue);font-size:19px;font-weight:600;margin:28px 0 14px;letter-spacing:-.01em}
-
-  .items{display:grid;gap:12px}
-  .item{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--razonet-off-white);border-radius:10px;padding:16px}
-  .item .ic{width:44px;height:44px;border-radius:10px;background:var(--razonet-light-blue);display:grid;place-items:center;
-    color:var(--razonet-mid-dark);font-weight:800;font-size:18px}
-  .item h3{font-size:15px;font-weight:600;color:var(--razonet-dark-blue);margin-bottom:3px}
-  .item p{font-size:14px;line-height:1.5}
-
-  .cta{margin:28px 0 8px;text-align:center}
-  .btn{display:inline-block;background:var(--razonet-blue);color:var(--razonet-white)!important;text-decoration:none;
-    font-weight:700;font-size:16px;padding:14px 26px;border-radius:10px}
-  .btn.sec{background:var(--razonet-mid-dark)}
-  .cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .cta .note{margin-top:12px;font-size:13px;color:var(--razonet-mid-dark)}
-
-  .callout{margin-top:22px;background:var(--razonet-light-blue);border-left:4px solid var(--razonet-blue);
-    border-radius:0 10px 10px 0;padding:16px 18px;color:var(--razonet-dark-blue);font-size:14px;line-height:1.55}
-  .warn{margin-top:16px;background:var(--razonet-rose);border-left:4px solid #C4443A;border-radius:0 10px 10px 0;
-    padding:16px 18px;font-size:14px;line-height:1.55;color:var(--razonet-darker-blue)}
-
-  .sign{margin-top:28px;font-size:15px;line-height:1.6}
-  .sign strong{color:var(--razonet-dark-blue)}
-
-  .foot{background:var(--razonet-darker-blue);color:var(--razonet-off-white);padding:26px 36px;font-size:12px;line-height:1.6}
-  .foot .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .foot .brandf{font-weight:800;font-size:16px;color:var(--razonet-white);margin-bottom:4px}
-  .foot a{color:var(--razonet-mid-light);text-decoration:none}
-  .foot .addr{opacity:.75;margin-top:14px;padding-top:14px;border-top:1px solid rgba(239,243,248,.15)}
-
-  @media (max-width:520px){.head,.hero,.body,.foot{padding-left:22px;padding-right:22px}.hero h1{font-size:26px}}
-</style>
 </head>
-<body>
-<div class="mail">
+<body style="margin:0;padding:0;background-color:#EFF3F8;font-family:'Segoe UI',Arial,Helvetica,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Uma nova etapa para o seu negócio começa agora.</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EFF3F8;">
+<tr><td align="center" style="padding:24px 16px;">
+<table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:14px;overflow:hidden;">
 
-  <div class="head">
-    <a class="brand" href="https://razonet.com.br">
-      <img src="https://razonet.com.br/icons/logo-footer.svg" alt="Razonet - Contabilidade Digital" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';this.nextElementSibling.nextElementSibling.style.display='inline'">
-      <span class="word" style="display:none">Razonet</span>
-      <span class="desc" style="display:none">Contabilidade Digital</span>
-    </a>
-    <span class="tag">Simples Nacional</span>
-  </div>
+  <tr>
+    <td style="background-color:#003159;padding:20px 32px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td style="font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:20px;font-weight:800;color:#ffffff;">Razonet</td>
+        <td align="right" style="font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:12px;color:#CCE3FB;">Simples Nacional</td>
+      </tr></table>
+    </td>
+  </tr>
 
-  <div class="hero">
-    <span class="kicker">Boas-vindas · Desenquadramento</span>
-    <h1>Agora você faz parte do Simples Nacional! 🚀</h1>
-    <p>Uma nova etapa para o seu negócio começa agora.</p>
-  </div>
+  <tr>
+    <td style="background-color:#0171EB;padding:40px 32px 36px 32px;">
+      <table cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#2E8CF0;border-radius:999px;padding:6px 14px;">
+        <span style="font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#ffffff;">Boas-vindas · Desenquadramento</span>
+      </td></tr></table>
+      <p style="margin:16px 0 0 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:28px;line-height:1.25;font-weight:800;color:#ffffff;">Agora você faz parte do Simples Nacional! 🚀</p>
+      <p style="margin:12px 0 0 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#CCE3FB;">Uma nova etapa para o seu negócio começa agora.</p>
+    </td>
+  </tr>
 
-  <div class="body">
-    <p>Olá! Sua empresa agora faz parte do Simples Nacional! 🚀</p>
-    <p style="margin-top:12px">Essa é uma nova etapa para o seu negócio, e nos próximos dias nosso time ficará responsável pelos ajustes necessários para deixar tudo organizado: acompanhamento das informações, liberações dos sistemas e demais configurações para que sua empresa siga funcionando corretamente nesse novo momento.</p>
-    <p style="margin-top:12px">Durante esse processo, podemos precisar de algumas informações suas. Vamos entrar em contato por este WhatsApp, e é importante responder assim que possível para que tudo aconteça de forma tranquila e sem atrasos. 😊</p>
+  <tr>
+    <td style="padding:32px;">
+      <p style="margin:0 0 12px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1C232D;">Olá! Sua empresa agora faz parte do Simples Nacional! 🚀</p>
+      <p style="margin:0 0 12px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1C232D;">Essa é uma nova etapa para o seu negócio, e nos próximos dias nosso time ficará responsável pelos ajustes necessários para deixar tudo organizado: acompanhamento das informações, liberações dos sistemas e demais configurações para que sua empresa siga funcionando corretamente nesse novo momento.</p>
+      <p style="margin:0 0 12px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1C232D;">Durante esse processo, podemos precisar de algumas informações suas. Vamos entrar em contato por este WhatsApp, e é importante responder assim que possível para que tudo aconteça de forma tranquila e sem atrasos. 😊</p>
 
-    <div class="callout">🚀 <strong>Enquanto isso, te convidamos para a Reunião do Simples Nacional!</strong><br>Um encontro em grupo, leve e dinâmico, com outros empreendedores que também estão passando por essa nova fase. Vamos explicar a rotina de uma empresa no Simples Nacional, os principais cuidados desse regime e como aproveitar todos os recursos da plataforma Razonet.</div>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:20px 0 0 0;"><tr><td style="background-color:#CCE3FB;border-left:4px solid #0171EB;border-radius:0 10px 10px 0;padding:14px 16px;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:14px;line-height:1.55;color:#003159;">
+        🚀 <strong>Enquanto isso, te convidamos para a Reunião do Simples Nacional!</strong><br>Um encontro em grupo, leve e dinâmico, com outros empreendedores que também estão passando por essa nova fase. Vamos explicar a rotina de uma empresa no Simples Nacional, os principais cuidados desse regime e como aproveitar todos os recursos da plataforma Razonet.
+      </td></tr></table>
 
-    <div class="cta">
-      <div class="btns"><a class="btn" href="https://calendly.com/integracao-razonet/reuniao-de-boas-vindas-razonet">Escolher dia e horário →</a></div>
-    </div>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:24px 0 0 0;"><tr><td align="center">
+        <table cellpadding="0" cellspacing="0" border="0"><tr>
+          <td style="background-color:#0171EB;border-radius:10px;"><a href="https://calendly.com/integracao-razonet/reuniao-de-boas-vindas-razonet" style="display:inline-block;padding:13px 24px;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;">Escolher dia e horário →</a></td>
+        </tr></table>
+      </td></tr></table>
 
-    <p class="sign">Qualquer dúvida nesse início, é só nos chamar ou contar com o Alan! 💙<br><br>Um abraço,<br><strong>Equipe Razonet</strong></p>
-  </div>
+      <p style="margin:24px 0 0 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#1C232D;">Qualquer dúvida nesse início, é só nos chamar ou contar com o Alan! 💙<br><br>Um abraço,<br><strong style="color:#003159;">Equipe Razonet</strong></p>
+    </td>
+  </tr>
 
-  <div class="foot">
-    <div class="row">
-      <div><div class="brandf">Razonet</div>A primeira contabilidade digital do Brasil</div>
-      <div style="text-align:right"><a href="https://razonet.com.br">razonet.com.br</a><br><a href="https://cliente.razonet.com.br">Área do cliente</a><br><a href="https://instagram.com/razonetdigital">@razonetdigital</a></div>
-    </div>
-    <div class="addr">Rua Francisco Lindner, 534, Centro, Joaçaba/SC, CEP 89600-000<br>Rodovia SC 401, 4150, Ed. Primavera Office, 3º andar, Sala 01, Saco Grande, Florianópolis/SC, CEP 88.032-000</div>
-  </div>
+  <tr>
+    <td style="background-color:#1C232D;padding:24px 32px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td valign="top" style="font-family:'Segoe UI',Arial,Helvetica,sans-serif;">
+          <p style="margin:0;font-size:15px;font-weight:800;color:#ffffff;">Razonet</p>
+          <p style="margin:2px 0 0 0;font-size:12px;color:#EFF3F8;">A primeira contabilidade digital do Brasil</p>
+        </td>
+        <td valign="top" align="right" style="font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:12px;">
+          <a href="https://razonet.com.br" style="color:#4B9AF1;text-decoration:none;">razonet.com.br</a><br>
+          <a href="https://cliente.razonet.com.br" style="color:#4B9AF1;text-decoration:none;">Área do cliente</a><br>
+          <a href="https://instagram.com/razonetdigital" style="color:#4B9AF1;text-decoration:none;">@razonetdigital</a>
+        </td>
+      </tr></table>
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;"><tr><td style="border-top:1px solid #333d4a;padding-top:14px;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:11px;line-height:1.6;color:#9aa4b2;">
+        Rua Francisco Lindner, 534, Centro, Joaçaba/SC, CEP 89600-000<br>
+        Rodovia SC 401, 4150, Ed. Primavera Office, 3º andar, Sala 01, Saco Grande, Florianópolis/SC, CEP 88.032-000
+      </td></tr></table>
+    </td>
+  </tr>
 
-</div>
+</table>
+</td></tr>
+</table>
 </body>
 </html>
