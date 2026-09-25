@@ -39,6 +39,10 @@ Podem ser enviados a qualquer momento do relacionamento, independente da etapa d
 | `juridico-onboarding.html` | Proteção jurídica para o seu negócio |
 | `asaas-btg-onboarding.html` | Centralize suas cobranças e sua conta PJ |
 
+## Prints de tela
+
+Os 7 e-mails da seção 1 (Ativação) têm capturas de tela reais do sistema, extraídas do `Manual_Razonet_V3_6`, salvas em `onboarding-cs/assets/`. As imagens são referenciadas nos `<img src>` via `raw.githubusercontent.com` deste repositório — funciona porque o repositório é público. Se o repositório mudar para privado, ou se preferirem uma URL própria da Razonet, é só re-hospedar essas mesmas imagens (ex.: em razonet.com.br ou na biblioteca de mídia do RD Station) e trocar os links `<img src>` correspondentes.
+
 ## Pendências de conteúdo
 
 - `migracao-mei-para-simples.html`: incluir o link/anexo do "Guia de Desenquadramento" mencionado no conteúdo original (marcado com comentário `TODO` no HTML).
