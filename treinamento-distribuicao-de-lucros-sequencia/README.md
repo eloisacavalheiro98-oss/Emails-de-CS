@@ -18,5 +18,6 @@ Layout redesenhado (28/09) no padrao visual das demais sequencias recentes: head
 ## Links
 
 - Sala: https://meet.google.com/vna-vjcv-gzv
-- Calendario: https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWZiYnR0ZTMycmE3OWExYjRubjk1aDFybzIgZWxvaXNhLmNhdmFsaGVpcm9AcmF6b25ldC5jb20uYnI&tmsrc=eloisa.cavalheiro%40razonet.com.br
+- Calendario: https://calendar.google.com/calendar/render?action=TEMPLATE&text=Treinamento%20Clientes%20-%20Distribui%C3%A7%C3%A3o%20de%20Lucros&dates=20261007T180000Z/20261007T193000Z&details=Treinamento%20online%20via%20Google%20Meet.%0A%0ALink%20da%20videochamada%3A%20https%3A%2F%2Fmeet.google.com%2Fvna-vjcv-gzv&location=https%3A%2F%2Fmeet.google.com%2Fvna-vjcv-gzv
+  (substituido em 28/09: o link antigo, com `tmeid` do evento da organizadora, nao funcionava para outras pessoas. Este novo usa o formato publico "adicionar evento" do Google Calendar, funciona para qualquer destinatario.)
 - Telefone: +55 19 4560-9553, PIN 117 489 046
