@@ -13,6 +13,8 @@ Treinamento para clientes: quarta-feira, 07/10, das 15h as 16h30, via Google Mee
 
 Os emails nao incluem link de descadastro, pois a plataforma de envio ja adiciona esse recurso automaticamente.
 
+Layout redesenhado (28/09) no padrao visual das demais sequencias recentes: header + hero em gradiente azul Razonet, badge de contagem regressiva, cards e caixa de data/hora, tudo em tabelas com estilo 100% inline (sem `<style>` no head), compativel com RD Station.
+
 ## Links
 
 - Sala: https://meet.google.com/vna-vjcv-gzv
