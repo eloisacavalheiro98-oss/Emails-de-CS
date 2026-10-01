@@ -11,6 +11,8 @@ Treinamento para clientes: quarta-feira, 07/10, das 15h as 16h30, via Google Mee
 - 07/10 as 09h: lembrete do dia
 - 07/10 as 14h50: ultimo aviso antes do inicio
 
+**01/10: errata.** O email `08-domingo-04-10-lembrete.html` ("faltam 3 dias") foi enviado por engano no lugar do email `05-quinta-01-10-o-que-sera-abordado.html` ("faltam 6 dias"). Disparado `05b-quinta-01-10-correcao-contagem.html` no mesmo dia para corrigir a contagem.
+
 Os emails nao incluem link de descadastro, pois a plataforma de envio ja adiciona esse recurso automaticamente.
 
 Layout redesenhado (28/09) no padrao visual das demais sequencias recentes: header + hero em gradiente azul Razonet, badge de contagem regressiva, cards e caixa de data/hora, tudo em tabelas com estilo 100% inline (sem `<style>` no head), compativel com RD Station.
