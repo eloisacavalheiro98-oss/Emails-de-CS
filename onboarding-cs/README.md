@@ -1,6 +1,6 @@
 # Sequência de e-mails — Onboarding CS
 
-16 e-mails de onboarding e boas-vindas, em HTML com tabelas e estilo 100% inline (sem `<style>` no head), no padrão que renderiza corretamente no RD Station — mesmo formato usado em `vale-transporte-regras-e-cuidados.html`. Paleta oficial Razonet. Sem placeholder de nome (saudação genérica).
+18 e-mails de onboarding e boas-vindas, em HTML com tabelas e estilo 100% inline (sem `<style>` no head), no padrão que renderiza corretamente no RD Station — mesmo formato usado em `vale-transporte-regras-e-cuidados.html`. Paleta oficial Razonet. Sem placeholder de nome (saudação genérica).
 
 ## 1. Ativação da conta (D+0 a D+17)
 
@@ -38,6 +38,15 @@ Podem ser enviados a qualquer momento do relacionamento, independente da etapa d
 |---|---|
 | `juridico-onboarding.html` | Proteção jurídica para o seu negócio |
 | `asaas-btg-onboarding.html` | Centralize suas cobranças e sua conta PJ |
+
+## 4. Educativos / financeiro pessoal
+
+Reforçam conceitos importantes no início da jornada do cliente — podem ser enviados perto da ativação ou como reforço pontual.
+
+| Arquivo | Assunto sugerido |
+|---|---|
+| `onboarding-notas-fiscais-novo-negocio.html` | Notas fiscais e impostos: o começo da sua empresa |
+| `onboarding-prolabore-e-distribuicao-lucros.html` | Como tirar dinheiro da empresa do jeito certo |
 
 ## Prints de tela
 
