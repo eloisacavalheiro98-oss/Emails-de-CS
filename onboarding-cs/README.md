@@ -29,7 +29,7 @@ Disparo único, conforme o tipo de cadastro do cliente (mutuamente exclusivos).
 | `migracao-mei-para-simples.html` | Cliente contratou migração de MEI para Simples Nacional | Vamos migrar seu MEI para o Simples Nacional |
 | `boas-vindas-sem-cnpj.html` | Cliente sem CNPJ, abertura de empresa em andamento | Vamos abrir a sua empresa |
 | `troca-de-contabilidade.html` | Cliente migrando de outra contabilidade | Bem-vindo(a) à Razonet! |
-| `informativo-empresa-recem-aberta.html` | Empresa recém-aberta (informativo com o essencial dos primeiros meses) | Sua empresa está aberta: o que você precisa saber agora |
+| `informativo-empresa-recem-aberta.html` | Empresa recém-aberta (informativo com o essencial dos primeiros meses) | 🎉 Parabéns, sua empresa saiu do papel! |
 | `convite-reuniao-simples-nacional.html` | Empresa recém-aberta — convite para a Reunião do Simples Nacional (Calendly de boas-vindas) | Convite: Reunião do Simples Nacional para quem está começando |
 
 ## 3. Cross-sell / apresentação de serviços
