@@ -5,10 +5,10 @@
 | Ordem | Arquivo | Envio | Assunto sugerido |
 |---|---|---|---|
 | 1 | `01-sexta-30-10-aviso-finados.html` | Sexta, 30/10 | 📢 Segunda (02/11) é feriado de Finados: veja como fica o atendimento |
-| 2 | `02-segunda-02-11-hoje-finados.html` | Segunda, 02/11 | HOJE é feriado de Finados: o Alan segue com você no app |
+| 2 | `02-segunda-02-11-hoje-finados.html` | Segunda, 02/11 | Feriado hoje (02/11): não teremos atendimento | o Alan segue no app |
 | 3 | `03-quarta-18-11-aviso-consciencia-negra.html` | Quarta, 18/11 | 📢 Feriado de 20/11: atendimento e pagamento do DAS |
-| 4 | `04-sexta-20-11-hoje-consciencia-negra.html` | Sexta, 20/11 | HOJE é feriado de 20/11: o Alan segue com você no app |
+| 4 | `04-sexta-20-11-hoje-consciencia-negra.html` | Sexta, 20/11 | Feriado hoje (20/11): não teremos atendimento | o Alan segue no app |
 
-- Equipe em **pausa** nos dias de feriado, sem plantão (tom positivo: evitar "Razonet fechada"). Orientação: falar com o Alan no app, disponível a qualquer hora.
+- Nos dias de feriado: **não teremos atendimento**, sem plantão (não usar "Razonet fechada"). Orientação: falar com o Alan no app, disponível a qualquer hora.
 - 20/11 coincide com o vencimento do DAS: o e-mail 3 recomenda pagar até quinta, 19/11.
 - Retorno: terça 03/11 e segunda 23/11.
