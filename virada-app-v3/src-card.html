@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Card 1300x700 — Virada do app para a nova plataforma</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--razonet-blue:#0171EB;--razonet-off-white:#EFF3F8;--razonet-dark-blue:#003159;--razonet-darker-blue:#1C232D;
+    --razonet-white:#FFFFFF;--razonet-light-blue:#CCE3FB;--razonet-mid-light:#4B9AF1;--razonet-mid-dark:#0151A2}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:transparent;font-family:'Inter','Inter Variable','Segoe UI',-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+  .card{width:1300px;height:700px;position:relative;overflow:hidden;background:var(--razonet-dark-blue);color:var(--razonet-white);
+    padding:0 0 0 110px;display:flex;flex-direction:column;justify-content:center}
+  .card::before{content:"";position:absolute;width:980px;height:980px;border-radius:50%;background:var(--razonet-blue);right:-330px;bottom:-470px}
+
+  .kicker{position:relative;display:inline-block;align-self:flex-start;background:rgba(204,227,251,.18);border:2px solid rgba(204,227,251,.5);
+    color:var(--razonet-light-blue);border-radius:999px;padding:10px 24px;font-size:22px;font-weight:600}
+  h1{position:relative;margin-top:26px;font-size:72px;line-height:1.05;font-weight:800;letter-spacing:-.03em;max-width:11ch}
+  .sub{position:relative;margin-top:22px;font-size:27px;line-height:1.4;color:var(--razonet-light-blue);max-width:23ch}
+  .free{position:relative;margin-top:26px;align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:var(--razonet-white);
+    color:var(--razonet-dark-blue);border-radius:14px;padding:14px 22px;font-size:22px;font-weight:700}
+  .free b{width:30px;height:30px;border-radius:50%;background:var(--razonet-blue);display:grid;place-items:center}
+  .free b svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* Mock: tela de login da nova plataforma */
+  .screen{position:absolute;right:110px;bottom:-90px;width:440px;height:560px;background:var(--razonet-white);border-radius:34px 34px 0 0;
+    padding:40px 36px;box-shadow:0 40px 90px rgba(0,49,89,.4);transform:rotate(-7deg);color:var(--razonet-dark-blue)}
+  .screen .lbl{font-size:15px;font-weight:600;color:var(--razonet-mid-dark);text-transform:uppercase;letter-spacing:.06em}
+  .screen .ttl{font-size:38px;font-weight:800;letter-spacing:-.03em;margin-top:6px;line-height:1.1}
+  .field{margin-top:26px}
+  .field small{display:block;font-size:14px;font-weight:600;color:var(--razonet-mid-dark);margin-bottom:8px}
+  .field .in{height:54px;border-radius:12px;border:2px solid var(--razonet-light-blue);background:var(--razonet-off-white);display:flex;align-items:center;padding:0 16px;gap:10px}
+  .field .in i{display:block;height:12px;border-radius:6px;background:var(--razonet-darker-blue);width:60%}
+  .field .in.pw i{background:var(--razonet-light-blue);width:40%}
+  .enter{margin-top:24px;height:56px;border-radius:12px;background:var(--razonet-blue);color:#fff;font-size:20px;font-weight:700;display:grid;place-items:center}
+
+  .pill{position:absolute;right:70px;top:110px;background:var(--razonet-white);color:var(--razonet-dark-blue);border-radius:22px;padding:18px 24px;
+    box-shadow:0 24px 60px rgba(0,49,89,.4);transform:rotate(5deg);display:flex;gap:14px;align-items:center}
+  .pill .p{width:46px;height:46px;border-radius:12px;background:var(--razonet-blue);display:grid;place-items:center}
+  .pill .p svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .pill small{display:block;font-size:14px;font-weight:600;color:var(--razonet-mid-dark)}
+  .pill strong{font-size:22px;font-weight:800;letter-spacing:-.02em}
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="kicker">Aviso importante</span>
+  <h1>A versão antiga do app sai do ar</h1>
+  <p class="sub">Acesse a nova Plataforma Razonet com o seu e-mail, no computador ou no celular.</p>
+  <span class="free"><b><svg viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg></b>Web, iPhone e Android</span>
+
+  <div class="screen">
+    <div class="lbl">Nova plataforma</div>
+    <div class="ttl">Entrar na Razonet</div>
+    <div class="field"><small>E-mail</small><div class="in"><i></i></div></div>
+    <div class="enter">Acessar</div>
+  </div>
+
+  <div class="pill"><div class="p"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><small>Sábado</small><strong>31 de outubro</strong></div></div>
+</div>
+</body>
+</html>
