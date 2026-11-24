@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Hero clean — Razonet plataforma</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1280px;height:540px;overflow:hidden}
+  body{font-family:'Inter','Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+  .hero{position:relative;width:1280px;height:540px;overflow:hidden;background:#EFF3F8}
+  .screen{position:absolute;left:140px;top:90px;width:1000px;border-radius:18px 18px 0 0;overflow:hidden;background:#fff;
+    border:1px solid #DBE6F3;box-shadow:0 30px 70px rgba(0,49,89,.12)}
+  .screen img{display:block;width:100%}
+  .chip{position:absolute;display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #DBE6F3;border-radius:14px;padding:12px 20px 12px 12px;
+    box-shadow:0 14px 34px rgba(0,49,89,.12);color:#003159}
+  .dot{width:40px;height:40px;border-radius:10px;background:#EAF3FE;display:grid;place-items:center}
+  .dot svg{width:22px;height:22px;stroke:#0171EB;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .chip small{display:block;font-size:13px;font-weight:500;color:#5a6e8c}
+  .chip strong{display:block;font-size:19px;font-weight:700;letter-spacing:-.01em}
+  .c1{left:60px;top:150px} .c2{right:60px;top:110px} .c3{left:60px;top:400px} .c4{right:60px;top:360px}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="screen"><img src="../assets/nova-tela-inicial/01-tela-inicio-menu.png" alt=""></div>
+  <div class="chip c1"><div class="dot"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><div><small>Conta digital</small><strong>BTG</strong></div></div>
+  <div class="chip c2"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 3v18M16.5 7.5c0-1.7-2-3-4.5-3s-4.5 1.3-4.5 3 2 2.6 4.5 3 4.5 1.3 4.5 3-2 3-4.5 3-4.5-1.3-4.5-3"/></svg></div><div><small>Cobranças</small><strong>Asaas</strong></div></div>
+  <div class="chip c3"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><div><small>Segurança do trabalho</small><strong>Laudos</strong></div></div>
+  <div class="chip c4"><div class="dot"><svg viewBox="0 0 24 24"><path d="M12 4v16M5 20h14M6 8h12M6 8l-3 6a3 3 0 006 0zM18 8l-3 6a3 3 0 006 0z"/></svg></div><div><small>Assessoria</small><strong>Jurídica</strong></div></div>
+</div>
+</body>
+</html>
